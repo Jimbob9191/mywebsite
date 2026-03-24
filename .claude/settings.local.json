@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git --yes)",
+      "Read(//usr/local/**)",
+      "Read(//usr/**)",
+      "Bash(echo \"PATH: $PATH\")",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/James/AppData/Roaming/**)",
+      "Read(//c/Users/James/**)",
+      "Bash(npm run:*)",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" run build)",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(node -e \"const p = require\\(''./package.json''\\); console.log\\(JSON.stringify\\(p.dependencies, null, 2\\)\\)\")",
+      "Bash(npm install:*)",
+      "Bash(node -e \"const g = require\\(''geist/font/sans''\\); console.log\\(''variable:'', g.GeistSans.variable, ''className:'', g.GeistSans.className\\)\")"
+    ]
+  }
+}
