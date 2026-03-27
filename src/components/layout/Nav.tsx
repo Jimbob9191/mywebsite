@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Menu, X } from "lucide-react";
 
 const links = [
   { href: "/work", label: "Work" },
@@ -14,10 +14,15 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   const [isDark, setIsDark] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     setIsDark(document.documentElement.classList.contains("dark"));
   }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   function toggleTheme() {
     const next = !isDark;
@@ -36,8 +41,9 @@ export default function Nav() {
           Your Name
         </Link>
 
-        <div className="flex items-center gap-8">
-          <ul className="flex items-center gap-8">
+        <div className="flex items-center gap-4">
+          {/* Desktop links */}
+          <ul className="hidden md:flex items-center gap-8">
             {links.map(({ href, label }) => {
               const active = pathname === href || pathname.startsWith(href + "/");
               return (
@@ -64,8 +70,46 @@ export default function Nav() {
           >
             {isDark ? <Sun size={16} /> : <Moon size={16} />}
           </button>
+
+          {/* Hamburger button */}
+          <button
+            onClick={() => setIsMenuOpen((o) => !o)}
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+            className="md:hidden text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </div>
       </nav>
+
+      {/* Mobile dropdown */}
+      {isMenuOpen && (
+        <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-background/80 backdrop-blur-md">
+          <div className="border-t border-border/40 bg-background/95 backdrop-blur-sm">
+          <ul className="max-w-5xl mx-auto px-6 py-2 flex flex-col">
+            {links.map(({ href, label }) => {
+              const active = pathname === href || pathname.startsWith(href + "/");
+              return (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block py-3 text-sm transition-colors ${
+                      active
+                        ? "text-foreground font-medium"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
