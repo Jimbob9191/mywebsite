@@ -13,7 +13,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl">
-          I&apos;m Your Name, a designer focused on clarity, usability, and craft. I work with startups and
+          I&apos;m James Molyneux-Birch, a designer focused on clarity, usability, and craft. I work with startups and
           established teams to turn complex problems into considered experiences.
         </p>
 

@@ -4,14 +4,14 @@ export default function Footer() {
   return (
     <footer className="border-t border-border/40 mt-auto">
       <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-        <p>© {year} Your Name</p>
+        <p>© {year} James Molyneux-Birch</p>
         <p>
           Available for freelance work &mdash;{" "}
           <a
-            href="mailto:hello@yourname.com"
+            href="mailto:jamesmolyneuxbirch@gmail.com"
             className="text-foreground underline underline-offset-4 hover:text-foreground/70 transition-colors"
           >
-            hello@yourname.com
+            jamesmolyneuxbirch@gmail.com
           </a>
         </p>
       </div>

@@ -38,7 +38,7 @@ export default function Nav() {
           href="/"
           className="text-sm font-medium tracking-wide text-foreground hover:text-foreground/70 transition-colors"
         >
-          Your Name
+          James Molyneux-Birch
         </Link>
 
         <div className="flex items-center gap-4">

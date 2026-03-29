@@ -7,8 +7,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Your Name — UX/UI Designer",
-    template: "%s — Your Name",
+    default: "James Molyneux-Birch — UX/UI Designer",
+    template: "%s — James Molyneux-Birch",
   },
   description:
     "UX/UI designer crafting clean, considered digital products. Available for freelance work.",

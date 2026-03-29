@@ -51,7 +51,7 @@ export default function AboutPage() {
 
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>
-              I&apos;m Your Name, a UX/UI designer based in London. I&apos;ve been designing
+              I&apos;m James Molyneux-Birch, a UX/UI designer based in London. I&apos;ve been designing
               digital products for eight years, working across startups, agencies, and in-house
               teams.
             </p>
@@ -69,10 +69,10 @@ export default function AboutPage() {
 
           <div className="mt-10">
             <a
-              href="mailto:hello@yourname.com"
+              href="mailto:jamesmolyneuxbirch@gmail.com"
               className="text-sm font-medium underline underline-offset-4 hover:text-foreground/70 transition-colors"
             >
-              hello@yourname.com
+              jamesmolyneuxbirch@gmail.com
             </a>
           </div>
         </div>
