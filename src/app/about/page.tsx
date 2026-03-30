@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import type { Metadata } from "next";
 
@@ -47,6 +48,15 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* Left column */}
         <div>
+          <div className="relative aspect-[4/5] w-full bg-muted rounded-sm overflow-hidden mb-8">
+            <Image
+              src="/profile.jpg"
+              alt="James Molyneux-Birch"
+              fill
+              className="object-cover"
+            />
+          </div>
+
           <h1 className="text-3xl font-medium mb-8">About</h1>
 
           <div className="space-y-5 text-muted-foreground leading-relaxed">
