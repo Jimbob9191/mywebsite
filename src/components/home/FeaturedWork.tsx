@@ -10,7 +10,7 @@ export default function FeaturedWork({ caseStudies }: Props) {
   if (caseStudies.length === 0) return null;
 
   return (
-    <section className="max-w-5xl mx-auto px-6 py-16 border-t border-border/40">
+    <section className="max-w-5xl mx-auto px-6 py-16">
       <div className="flex items-baseline justify-between mb-12">
         <h2 className="text-sm font-medium tracking-widest uppercase text-muted-foreground">
           Selected Work
