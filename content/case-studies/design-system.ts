@@ -8,7 +8,7 @@ const designSystem: CaseStudy = {
   year: 2023,
   role: "Design Systems Lead",
   tags: ["Design Systems", "Figma", "Component Library", "Documentation"],
-  coverImage: "/images/case-studies/design-system/cover.jpg",
+  coverImage: "/images/placeholder.avif",
   coverAlt: "Meridian design system component library in Figma",
   accentColor: "#D5DDE8",
   featured: true,
@@ -37,7 +37,7 @@ const designSystem: CaseStudy = {
     },
     {
       type: "image",
-      src: "/images/case-studies/design-system/audit.jpg",
+      src: "/images/placeholder.avif",
       alt: "Spreadsheet showing component audit across six products",
       caption: "The audit: 400 components mapped to their functional equivalents.",
       fullWidth: true,
@@ -50,8 +50,8 @@ const designSystem: CaseStudy = {
     {
       type: "image-pair",
       images: [
-        { src: "/images/case-studies/design-system/tokens.jpg", alt: "Colour and typography token documentation" },
-        { src: "/images/case-studies/design-system/components.jpg", alt: "Button component with all state variants" },
+        { src: "/images/placeholder.avif", alt: "Colour and typography token documentation" },
+        { src: "/images/placeholder.avif", alt: "Button component with all state variants" },
       ],
     },
     {

@@ -8,7 +8,7 @@ const mobileAppRedesign: CaseStudy = {
   year: 2024,
   role: "Lead UX/UI Designer",
   tags: ["UX Research", "Product Design", "iOS", "Prototyping"],
-  coverImage: "/images/case-studies/mobile-app-redesign/cover.jpg",
+  coverImage: "/images/placeholder.avif",
   coverAlt: "Redesigned FitTrack app screens on iPhone",
   accentColor: "#E8E0D5",
   featured: true,
@@ -37,7 +37,7 @@ const mobileAppRedesign: CaseStudy = {
     },
     {
       type: "image",
-      src: "/images/case-studies/mobile-app-redesign/research.jpg",
+      src: "/images/placeholder.avif",
       alt: "Affinity diagram from user interview synthesis",
       caption: "Synthesising 12 interviews into core pain point themes.",
       fullWidth: false,
@@ -49,7 +49,7 @@ const mobileAppRedesign: CaseStudy = {
     },
     {
       type: "image",
-      src: "/images/case-studies/mobile-app-redesign/screens.jpg",
+      src: "/images/placeholder.avif",
       alt: "Final app screens — home, log workout, and history",
       caption: "Home, logging flow, and history — the three screens that matter.",
       fullWidth: true,
