@@ -3,10 +3,14 @@
 
 import mobileAppRedesign from "./mobile-app-redesign";
 import designSystem from "./design-system";
+import eCommerceCheckout from "./e-commerce-checkout";
+import dashboardRedesign from "./dashboard-redesign";
 
 import type { CaseStudy } from "@/types";
 
 export const allCaseStudies: CaseStudy[] = [
   mobileAppRedesign,
   designSystem,
+  eCommerceCheckout,
+  dashboardRedesign,
 ];
