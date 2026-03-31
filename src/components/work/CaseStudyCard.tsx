@@ -14,7 +14,7 @@ export default function CaseStudyCard({ caseStudy }: Props) {
       className="group block"
     >
       <div
-        className="relative aspect-[4/3] overflow-hidden rounded-sm mb-5"
+        className="relative aspect-[4/3] overflow-hidden mb-5"
         style={{ backgroundColor: caseStudy.accentColor ?? "oklch(0.94 0 0)" }}
       >
         {caseStudy.coverImage && (

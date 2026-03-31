@@ -31,7 +31,7 @@ function Section({ section }: { section: CaseStudySection }) {
           }
         >
           <div
-            className="relative w-full overflow-hidden rounded-sm bg-muted"
+            className="relative w-full overflow-hidden bg-muted"
             style={{ aspectRatio: "16/9" }}
           >
             <Image
@@ -56,7 +56,7 @@ function Section({ section }: { section: CaseStudySection }) {
           {section.images.map((img, i) => (
             <div
               key={i}
-              className="relative aspect-[4/3] overflow-hidden rounded-sm bg-muted"
+              className="relative aspect-[4/3] overflow-hidden bg-muted"
             >
               <Image
                 src={img.src}
