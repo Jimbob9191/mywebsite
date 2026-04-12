@@ -45,7 +45,14 @@ const mobileAppRedesign: CaseStudy = {
     {
       type: "text",
       heading: "Outcomes",
-      body: "In order to help alleviate the issues above, I focused on four key design improvements:\n\n1. Set a clear type hierarchy across all onboarding screens.\n2. Consolidated the styling of inputs and buttons to a single consistent pattern.\n3. Adjusted the colour scheme to inspire trust and reduce visual noise.\n4. Ensured the dashboard's visual language aligned with the onboarding flow it follows.",
+      body: "To address the inconsistency and trust issues, I focused on four targeted design improvements:\n\nI established a clear typographic hierarchy across all onboarding screens — bringing consistency to heading sizes, body copy, and instructional text so users always knew where to look and what action was expected of them.\n\nI consolidated inputs and buttons to a single consistent pattern. Previously, CTA styling changed at almost every step; the redesign uses one button style, one input style, and one error state throughout.\n\nI adjusted the colour scheme to reduce visual noise and better communicate trust — a critical quality signal for an application holding financial assets. The revised palette draws more clearly from MetaMask's brand while feeling calmer and more considered.\n\nFinally, I aligned the dashboard's visual language with the onboarding flow it follows. The jarring transition between the two — different typographic scales, different button styles, different spacing rhythms — was resolved so the product feels continuous from first screen to main interface.",
+    },
+    {
+      type: "image",
+      src: "/images/placeholder.avif",
+      alt: "Redesigned MetaMask onboarding screens showing consistent styling across all steps",
+      caption: "The redesigned flow — consistent type hierarchy, unified inputs, and a trust-calibrated colour scheme.",
+      fullWidth: true,
     },
   ],
 };
