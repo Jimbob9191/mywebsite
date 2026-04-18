@@ -30,13 +30,13 @@ export default function Hero() {
           <div className="flex items-center gap-4">
             <Link
               href="/work"
-              className="inline-flex items-center justify-center h-10 px-6 rounded-sm bg-primary text-primary-foreground text-sm font-medium transition-colors hover:bg-primary/80"
+              className="inline-flex items-center justify-center h-10 px-6 rounded-none bg-primary text-primary-foreground text-sm font-medium transition-colors hover:bg-primary/80"
             >
               View Work
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center justify-center h-10 px-6 rounded-sm text-sm font-medium transition-colors hover:bg-stone-100 dark:hover:bg-muted"
+              className="inline-flex items-center justify-center h-10 px-6 rounded-none text-sm font-medium transition-colors hover:bg-stone-100 dark:hover:bg-muted"
             >
               About Me
             </Link>

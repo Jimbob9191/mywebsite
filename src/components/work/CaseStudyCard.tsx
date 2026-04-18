@@ -49,7 +49,7 @@ export default function CaseStudyCard({ caseStudy }: Props) {
 
         <div className="flex flex-wrap gap-1.5 pt-1">
           {caseStudy.tags.map((tag) => (
-            <Badge key={tag} variant="secondary" className="text-xs font-normal">
+            <Badge key={tag} variant="secondary" className="text-xs font-normal bg-neutral-600 text-neutral-200 dark:bg-neutral-600 dark:text-neutral-200">
               {tag}
             </Badge>
           ))}

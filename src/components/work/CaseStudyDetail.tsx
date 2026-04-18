@@ -129,7 +129,7 @@ export default function CaseStudyDetail({ caseStudy }: Props) {
 
           <div className="flex flex-wrap gap-2">
             {caseStudy.tags.map((tag) => (
-              <Badge key={tag} variant="secondary" className="font-normal">
+              <Badge key={tag} variant="secondary" className="font-normal bg-neutral-600 text-neutral-200 dark:bg-neutral-600 dark:text-neutral-200">
                 {tag}
               </Badge>
             ))}
